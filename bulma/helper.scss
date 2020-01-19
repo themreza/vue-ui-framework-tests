@@ -1,0 +1,76 @@
+$sides: (
+        "": "",
+        "t": "top",
+        "b": "bottom",
+        "l": "left",
+        "r": "right",
+);
+
+$breakpoints: (
+        "": "",
+        "xs": 576px,
+        "sm": 768pxm,
+        "md": 992px,
+        "lg": 1200px,
+);
+
+@each $breakName, $breakValue in $breakpoints {
+  @each $sideName, $sideValue in $sides {
+    @for $i from 0 through 30 {
+
+      $property: if($sideName == '', '', -#{$sideValue});
+      $space: $i * 1;
+      $selector: '';
+
+      @if $breakName != "" {
+        $selector: #{$sideName}-#{$breakName}-#{$i};
+      } @else {
+        $selector: #{$sideName}-#{$i};
+      }
+
+      @if $breakName != "" {
+        @media (min-width: $breakValue) {
+          .m#{$selector} {
+            margin#{$property}: #{$space}px;
+          }
+
+          .p#{$selector} {
+            padding#{$property}: #{$space}px;
+          }
+        }
+      } @else {
+        .m#{$selector} {
+          margin#{$property}: #{$space}px;
+        }
+
+        .p#{$selector} {
+          padding#{$property}: #{$space}px;
+        }
+      }
+    }
+  }
+}
+
+/* Other helpers */
+.column.vcentered, .vcentered {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-left {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-right {
+  justify-content: flex-end;
+}

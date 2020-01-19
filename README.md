@@ -134,7 +134,7 @@ All of the implementations must be fully responsive (mobile-first) and have the 
 * Footer
   - Three side-by-side columns
   - First column
-    - Made with <3
+    - Made with <3 by Decorina
     - Impressum
   - Second column
     - All prices are VAT inclusive
@@ -144,8 +144,6 @@ All of the implementations must be fully responsive (mobile-first) and have the 
       - VISA
       - American Express
       - Paypal
-      - dpd
-      - MPL
 
 ## App Structure
 
@@ -156,7 +154,7 @@ The root directory contains a `package.json` file with the necessary dependencie
 It requires Vue CLI to be installed globally:
 
 ```shell script
-yarn global add @vue/cli @vue/cli-service-global
+sudo yarn global add @vue/cli @vue/cli-service-global
 ```
 
 Each UI framework has its own folder with an `App.vue` file that contains the product page implementation.
@@ -168,10 +166,13 @@ vue serve
 ```    
 
 The common assets such as images, logos, and fonts are located in the `assets` folder.
+
+Asset sources (CC):
+* https://www.flickr.com/photos/sweefse/
   
 ## UI Frameworks
 
-* [Bulma](https://bulma.io/)
+* [Bulma / Buefy](https://buefy.org/)
 * [Quasar](https://quasar.dev/)
 * [Tailwind](https://tailwindcss.com/)
 * [Lightning Design System](https://www.lightningdesignsystem.com/)
@@ -193,7 +194,7 @@ The common assets such as images, logos, and fonts are located in the `assets` f
   - [Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/)
   - [Mighty Slider](https://www.mightyslider.com/)
   
-* Image galleries (full screen)
+* Light boxes
   - [Photo Swipe](https://photoswipe.com/)
   
 * Share icons
