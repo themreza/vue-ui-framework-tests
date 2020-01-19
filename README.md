@@ -146,7 +146,28 @@ All of the implementations must be fully responsive (mobile-first) and have the 
       - Paypal
       - dpd
       - MPL
-  
+
+## App Structure
+
+This project uses the instant prototyping feature of Vue.js.
+
+The root directory contains a `package.json` file with the necessary dependencies.
+
+It requires Vue CLI to be installed globally:
+
+```shell script
+yarn global add @vue/cli @vue/cli-service-global
+```
+
+Each UI framework has its own folder with an `App.vue` file that contains the product page implementation.
+
+To run each test, run the following command inside the UI framework's folder:
+
+```shell script
+vue serve
+```    
+
+The common assets such as images, logos, and fonts are located in the `assets` folder.
   
 ## UI Frameworks
 

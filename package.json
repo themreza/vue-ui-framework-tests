@@ -1,0 +1,10 @@
+{
+  "name": "vue-ui-framework-tests",
+  "version": "1.0.0",
+  "description": "A comparison of various UI frameworks through the implementation of a complete product page using Vue.js.",
+  "main": "main.js",
+  "repository": "git@github.com:themreza/vue-ui-framework-tests.git",
+  "author": "Mohammad Tomaraei <themreza@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
